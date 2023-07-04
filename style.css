@@ -1,43 +1,75 @@
 :root {
   --font: "oswald", sans-serif;
-  --yellow: #f8b400;
-  --white: #faf5e4;
-  --green: #2c786c;
-  --darkgreen: rgb(0, 68, 69);
+  --yellow: #fdb44b;
+  --purple: rgb(112, 34, 131);
+  --pink: #962071;
+  --green: #76b39d;
   --button-hover-transiton: all 200ms ease-in-out;
   --button-border-radius: 30px;
-  --box-shadow: 10px 10px 20px rgba(0, 68, 69, 0.3);
+  --box-shadow: 10px 10px 20px rgba(112, 34, 131, 0.3);
 }
 
 body {
-  font-family: "oswald", sans-serif;
-  margin: 0;
-}
-
-ul.navbar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--darkgreen);
+  font-family: var(--font);
+}
+
+.slider {
   display: flex;
-  justify-content: center; /* Center the navigation links horizontally */
+  height: 100vh;
+  overflow-x: none;
+  scroll-snap-type: x mandatory;
 }
 
-ul.navbar li {
-  display: inline-block;
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
 }
 
-ul.navbar li a {
-  font-size: 18px;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+.slide:nth-child(1) {
+  background-color: #f44336;
+}
+
+.slide:nth-child(2) {
+  background-color: #2196f3;
+}
+
+.slide:nth-child(3) {
+  background-color: #4caf50;
+}
+
+.slide:nth-child(4) {
+  background-color: #ffc107;
+}
+
+.slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 50px); /* Subtract the nav bar height */
+  color: #fff;
+  font-size: 40px;
+}
+
+.nav-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: #fff;
   text-decoration: none;
-  font-weight: 100;
-}
-
-ul.navbar li a:hover {
-  background-color: var(--green);
+  margin: 0 10px;
+  font-size: 20px;
 }
