@@ -1,0 +1,15 @@
+:root {
+  --font: "proxima-nova", sans-serif;
+  --yellow: #f8b400;
+  --white: #faf5e4;
+  --green: #2c786c;
+  --darkgreen: rgb(0, 68, 69);
+  --button-hover-transiton: all 200ms ease-in-out;
+  --button-border-radius: 30px;
+  --box-shadow: 10px 10px 20px rgba(0, 68, 69, 0.3);
+}
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  margin: 0;
+}
