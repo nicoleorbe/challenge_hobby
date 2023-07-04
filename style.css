@@ -1,5 +1,5 @@
 :root {
-  --font: "proxima-nova", sans-serif;
+  --font: "oswald", sans-serif;
   --yellow: #f8b400;
   --white: #faf5e4;
   --green: #2c786c;
@@ -10,6 +10,34 @@
 }
 
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "oswald", sans-serif;
   margin: 0;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--darkgreen);
+  display: flex;
+  justify-content: center; /* Center the navigation links horizontally */
+}
+
+ul.navbar li {
+  display: inline-block;
+}
+
+ul.navbar li a {
+  font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+ul.navbar li a:hover {
+  background-color: var(--green);
 }
