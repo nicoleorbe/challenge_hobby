@@ -1,9 +1,8 @@
 :root {
   --font: "oswald", sans-serif;
-  --yellow: #fdb44b;
-  --purple: rgb(112, 34, 131);
-  --pink: #962071;
-  --green: #76b39d;
+  --yellow: #ffd165;
+  --pink: #e29e9b;
+  --blue: #01ceca;
   --button-hover-transiton: all 200ms ease-in-out;
   --button-border-radius: 30px;
   --box-shadow: 10px 10px 20px rgba(112, 34, 131, 0.3);
@@ -31,11 +30,13 @@ body {
 }
 
 .slide:nth-child(1) {
-  background-color: #f44336;
+  /* background-color: #f44336; */
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/217/original/Untitled_design_%2821%29.png?1689533200");
+  background-position: right;
 }
 
 .slide:nth-child(2) {
-  background-color: #2196f3;
+  background-color: var(--pink);
 }
 
 .slide:nth-child(3) {
